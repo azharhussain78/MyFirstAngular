@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'your-agent-label'
+        label :any
     }
     stages {
         stage('Checkout') {
