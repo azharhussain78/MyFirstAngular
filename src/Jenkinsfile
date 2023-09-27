@@ -20,7 +20,7 @@ pipeline {
 
         stage('run') {
             steps {
-                // Add deployment steps here
+                // Add deployment steps here    
                 sh 'ng serve'  // Example: Deploy your app
             }
         }
