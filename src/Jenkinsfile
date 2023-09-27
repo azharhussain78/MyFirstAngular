@@ -13,21 +13,15 @@ pipeline {
             steps {
                 // Add build steps here
                 sh 'npm install'  // Example: Install npm dependencies
-                sh 'ng build --prod'  // Example: Build your Angular app
             }
         }
 
-        stage('Test') {
-            steps {
-                // Add test steps here
-                sh 'npm test'  // Example: Run tests
-            }
-        }
+       
 
-        stage('Deploy') {
+        stage('run') {
             steps {
                 // Add deployment steps here
-                sh 'npm deploy'  // Example: Deploy your app
+                sh 'ng serve'  // Example: Deploy your app
             }
         }
     }
